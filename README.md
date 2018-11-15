@@ -12,7 +12,11 @@ curl -O https://raw.githubusercontent.com/mikeparcewski/macsetup/master/Brewfile
 ```
 brew bundle
 ```
-4. Clean up the dock (e.g. add/remove any programs needed)
+4. Open IntelliJ and import settings from below jar
+```
+curl -O https://github.com/mikeparcewski/macsetup/blob/master/intellij-settings.jar?raw=true
+```
+5. Clean up the dock (e.g. add/remove any programs needed)
 
 ## Some useful hacks
 
