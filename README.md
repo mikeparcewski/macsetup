@@ -1,5 +1,7 @@
 # MacOS Development Setup
 
+Goal is to quickly set up a fresh install (or existing install) with base set of tools.
+
 1. Install homebrew
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
