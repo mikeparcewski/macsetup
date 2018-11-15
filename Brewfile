@@ -7,7 +7,7 @@ tap "homebrew/services"
 tap "pivotal/tap"
 cask "java"
 brew "ant"
-brew "docker"
+brew "docker", restart_service: true
 brew "docker-compose", link: false
 brew "docker-machine", restart_service: true
 brew "docker-machine-driver-xhyve"
