@@ -12,3 +12,11 @@ curl -O https://raw.githubusercontent.com/mikeparcewski/macsetup/master/Brewfile
 ```
 brew bundle
 ```
+4. Clean up the dock (e.g. add/remove any programs needed)
+
+## Some useful hacks
+
+* To add a space to between items in the dock, just run the below command.  After you'll see an empty space at the end of the bar and you can just drag in between your apps
+```
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall
+```
