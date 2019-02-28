@@ -24,5 +24,5 @@ curl -O https://github.com/mikeparcewski/macsetup/blob/master/intellij-settings.
 
 * To add a space to between items in the dock, just run the below command.  After you'll see an empty space at the end of the bar and you can just drag in between your apps
 ```
-defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
 ```
