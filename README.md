@@ -38,7 +38,11 @@ Goal is to quickly set up a fresh install (or existing install) with base set of
     for i in `jenv plugins`; do if [ "" != $i ]; then jenv enable-plugin $i; fi; done
     ```
     > Check out http://www.jenv.be, and skip the "installation" sections and jump straight to "configure" and "And Use!" sections.
-8. Clean up the dock (e.g. add/remove any programs needed)
+6. Install pip
+  ```
+  sudo python -m ensurepip
+  ```
+7. Clean up the dock (e.g. add/remove any programs needed)
 
 ## Other useful hacks
 To add a space to between items in the dock, just run the below command.  After you'll see an empty space at the end of the bar and you can just drag in between your apps
