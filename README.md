@@ -3,45 +3,45 @@
 Goal is to quickly set up a fresh install (or existing install) with base set of tools.
 
 1. Install homebrew
-  ```
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  ```
+      ```
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      ```
 2. Download the Homebrew bundle
-  ```
-  curl -O https://raw.githubusercontent.com/mikeparcewski/macsetup/master/Brewfile
-  ```
+      ```
+      curl -O https://raw.githubusercontent.com/mikeparcewski/macsetup/master/Brewfile
+      ```
 3. Load the brew bundle
-  ```
-  brew bundle
-  ```
+      ```
+      brew bundle
+      ```
 4. Install oh-my-zsh
-  ```
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  ```
+      ```
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+      ```
 5. Configure jenv - http://www.jenv.be/
     * Create config directory
-    ```
-    mkdir -p ~/.jenv/versions
-    ```
+        ```
+        mkdir -p ~/.jenv/versions
+        ```
     * Update .zshrc with some jenv stuff
-    ```
-    echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
-    echo 'eval "$(jenv init -)"' >> ~/.zshrc
-    source ~/.zshrc
-    ``` 
+        ```
+        echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+        echo 'eval "$(jenv init -)"' >> ~/.zshrc
+        source ~/.zshrc
+        ``` 
     * Set up the JDK's for jenv     
-    ```
-    for i in `ls -d -1 "/Library/Java/JavaVirtualMachines/"*/Contents/Home`; do jenv add $i; done
-    ```
+        ```
+        for i in `ls -d -1 "/Library/Java/JavaVirtualMachines/"*/Contents/Home`; do jenv add $i; done
+        ```
     * Enable all the plugins for jenv
-    ```
-    for i in `jenv plugins`; do if [ "" != $i ]; then jenv enable-plugin $i; fi; done
-    ```
+        ```
+        for i in `jenv plugins`; do if [ "" != $i ]; then jenv enable-plugin $i; fi; done
+        ```
     > Check out http://www.jenv.be, and skip the "installation" sections and jump straight to "configure" and "And Use!" sections.
 6. Install pip
-  ```
-  sudo python -m ensurepip
-  ```
+      ```
+      sudo python -m ensurepip
+      ```
 7. Clean up the dock (e.g. add/remove any programs needed)
 
 ## Other useful hacks
