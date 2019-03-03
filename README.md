@@ -18,6 +18,23 @@ Goal is to quickly set up a fresh install (or existing install) with base set of
       ```
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
       ```
+5. Install Azul JAVA
+    * Let's get into the VM directory
+        ```
+        cd /Library/Java/JavaVirtualMachines
+        ```
+    * First download & mount
+        ```
+        sudo curl -Os https://cdn.azul.com/zulu/bin/zulu11.29.3-ca-jdk11.0.2-macosx_x64.dmg
+        hdiutil mount zulu11.29.3-ca-jdk11.0.2-macosx_x64.dmg
+        sudo curl -Os https://cdn.azul.com/zulu/bin/zulu8.33.0.1-jdk8.0.192-macosx_x64.dmg
+        hdiutil mount zulu8.33.0.1-jdk8.0.192-macosx_x64.dmg
+        ```
+    * Now install
+        ```
+         sudo installer -pkg "/Volumes/Zulu OpenJDK 11.29+3/Double-Click to Install Zulu 11.pkg" -verbose -target /
+         sudo installer -pkg "/Volumes/Zulu OpenJDK 8.33.0.1/Double-Click to Install Zulu 8.pkg" -verbose -target /
+        ```
 5. Configure jenv - http://www.jenv.be/
     * Create config directory
         ```
