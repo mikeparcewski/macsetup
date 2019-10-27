@@ -17,6 +17,7 @@ brew "docker-machine", restart_service: true
 brew "docker-machine-driver-xhyve"
 brew "git"
 brew "git-secret"
+brew "go"
 brew "gradle"
 brew "kubernetes-helm"
 brew "htop"
